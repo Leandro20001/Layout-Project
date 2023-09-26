@@ -1,0 +1,154 @@
+html,body{
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(253, 253, 253);
+}
+
+@font-face {
+  font-family:'ShareTech';
+  src: url("fonts/ShareTech-Regular.ttf");
+}
+
+p{
+  letter-spacing: 2px;
+  transition: 2s;
+  font-size: 1.2rem;
+  color: rgb(106, 106, 106);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  min-width: 100%;
+
+}
+
+.hide{
+  transition: 300ms;
+  margin: 0px;
+  padding: 0px;
+  opacity: 0;
+}
+
+h1{
+  text-align: center;
+  margin:auto auto 5%;
+  padding: 0px;
+  transition: 1s;
+  background-color: rgba(216, 216, 216, 0.188);
+  box-shadow: 0 0 3px rgba(67, 67, 67, 0.236);
+  color: rgb(12, 12, 12);
+  font-family: 'ShareTech';
+  font-size: 4rem;
+  letter-spacing: 3.5px;
+  max-width: 80%;
+}
+
+
+#infoContainer{
+  position: relative;
+  left: -30%;
+  box-sizing:border-box ;
+  padding: 10px 6px 6px 3px;
+  text-align: center;
+  margin: 10px auto;
+  transition: 1s;
+  width:34vw;
+  height:70vh;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 7px rgba(45, 45, 45, 0.558);
+  border-radius: 28px;
+
+}
+
+#productCard1>img{
+  box-sizing: border-box;
+  border-radius: 16px;
+  transition: 1.6s;
+  width: 100%;
+  height: 100%;
+}
+
+
+#productCard>img.hide{
+  opacity: 0;
+}
+
+#infoContainer.hide{
+  height: 0;
+  opacity: 0;
+}
+
+
+
+#infoContainer2{
+  position: absolute;
+  top: 48.5%;
+  right: -52%;
+  transform: translate(50%,-50%);
+  box-sizing:border-box ;
+  padding: 10px 6px 6px 3px;
+  text-align: center;
+  margin: 10px auto auto 2%;
+  transition: 1s;
+  width:34vw;
+  height:70vh;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 7px rgba(45, 45, 45, 0.558);
+  border-radius: 28px;
+}
+
+#infoContainer2>img{
+  border-radius: 16px;
+  max-width: 100%;
+}
+
+#infoContainer2.hide{
+  opacity: 0;
+}
+
+
+#mainSpan{
+  position: relative;
+  top: 20%;
+  color: rgb(17, 17, 17);
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  display: block;
+  text-align: center;
+  font-size: 4.7rem;
+  font-family:'ShareTech';
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+#mainButton{
+  transition: 200ms;
+  position: relative;
+  top: 25%;
+  display: block;
+  background-color: rgb(12, 12, 12);
+  height: 15vh;
+  width: 45vw;
+  margin: auto;
+  border-radius: 60px;
+  border: 0px;
+  box-shadow:0 0 8px whitesmoke;
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  letter-spacing: 3.5px;
+  cursor: pointer;
+}
+
+
+#mainButton:hover{
+  transition: 250ms;
+  background-color: rgb(38, 38, 38);
+  scale: 1.2;
+
+}
+#mainSpan.hide,#mainButton.hide{
+  transition: 0;
+  display: none;
+  height: 0;
+  padding: 0;
+  margin: 0;
+}
