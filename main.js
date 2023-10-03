@@ -51,9 +51,6 @@ mainButton.addEventListener('click',(e)=>{
 
 
   //stage1//
-
-
-
   h1.classList.remove('hide')
   infoContainer.classList.remove('hide')
   infoContainer2.classList.remove('hide')
