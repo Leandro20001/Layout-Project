@@ -1,9 +1,12 @@
+window.sr = ScrollReveal({reset:false})
+sr.reveal('.mainText'),{duration:12000}
+
 const mainButton = document.querySelector('#mainButton')
 const mainSpan = document.querySelector('#mainSpan')
 //stage1//
 
 //requirindo os elementos do container//
-const h1 = document.querySelector('h1')
+const h1 = document.querySelector('#secondSpan')
 const infoContainer = document.querySelector('#infoContainer');
 const infoContainer2 = document.querySelector('#infoContainer2')
 
@@ -12,17 +15,16 @@ var img = 0;
 var allImg = [];
 var imgTimer = 5000;
 //selecionando todas as imagens///////////////////////////
-const asusImage = document.querySelectorAll('img')
-const imageArray = Array.from(asusImage)
-const firstImage = imageArray[0]
-const imageTwo = imageArray[1]
-const imageThree = imageArray [2]
-const text = document.querySelector('p')
-///////////////////////////////////////////////////////////
+
+
 const mainImg = document.querySelector('#firstDisplay img')
 const samsungImg = document.getElementById('samsungImg')
 const mainImgContainer = document.querySelector('#mainImgContainer')
 
+
+
+
+//botoes de mudanca de layout//
 const samsungButton = document.getElementById('samsungButton')
 const dellButton = document.querySelector('#dellButton')
 
@@ -31,31 +33,15 @@ const dellButton = document.querySelector('#dellButton')
 samsungButton.addEventListener('click',(e)=>{
   mainImg.classList.add('hide')
   samsungImg.classList.remove('hide')
+  document.body.style.backgroundColor = '#101010'
   e.stopPropagation()
 })
 
 dellButton.addEventListener('click',(e)=>{
   samsungImg.classList.add('hide')
   mainImg.classList.remove('hide')
+  document.body.style.backgroundColor = 'white'
   e.stopPropagation()
-})
-
-
-
-
-
-mainButton.addEventListener('click',(e)=>{
-  mainButton.classList.add('hide')
-  mainSpan.classList.add('hide')
-  e.stopPropagation()
-
-
-  //stage1//
-  h1.classList.remove('hide')
-  infoContainer.classList.remove('hide')
-  infoContainer2.classList.remove('hide')
-  firstImage.classList.remove('hide')
-  text.classList.remove('hide')
 })
 
 console.log(mainImg)
